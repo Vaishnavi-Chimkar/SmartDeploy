@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SmartDeploy Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f5fb;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px #0001;
+        }
+
+        h1 { color: #3344aa; }
+
+        .status {
+            color: #13834b;
+            font-weight: bold;
+        }
+
+        .version {
+            color: #555;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>SmartDeploy</h1>
+        <p>Secure and Automated Deployment Platform</p>
+        <p class="status">● Application is running</p>
+        <p>CI/CD | Kubernetes | Monitoring | Rollback</p>
+        <p class="version">Version: {{ version }}</p>
+    </div>
+</body>
+</html>
