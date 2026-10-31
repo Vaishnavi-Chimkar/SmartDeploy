@@ -7,6 +7,11 @@ ENV APP_VERSION=dev
 
 WORKDIR /app
 
+# Update installed Debian packages to receive security fixes
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && rm -rf /var/lib/apt/lists/*
+
 RUN useradd --create-home --uid 10001 appuser
 
 COPY requirements.txt .
